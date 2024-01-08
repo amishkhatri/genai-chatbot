@@ -1,0 +1,16 @@
+<html>
+<head>
+
+</head>
+<body class="table table-sm">
+<div class="chat-container" >
+    <div class="chat-display">
+      <!-- Chat messages will be displayed here -->
+    </div>
+    <div class="chat-input">
+      <input type="text" [(ngModel)]="userInput" (keyup.enter)="sendMessage()" class="btn btn-outline-success" placeholder="Ask a question...">
+      <button (click)="sendMessage()" class="btn btn-outline-success">Send</button>
+    </div>
+  </div>
+</body>
+  </html>

@@ -1,16 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ChataiComponent } from './chatai/chatai.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChataiComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule // Add FormsModule here
+    ,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
